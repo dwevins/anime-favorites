@@ -1,13 +1,13 @@
-'use strict'
+'use strict';
 
 class ShowController {
 
   * index(request, response) {
-    //
+    yield response.sendView('show.index');
   }
 
   * create(request, response) {
-    //
+    yield response.sendView('show.create');
   }
 
   * store(request, response) {
@@ -32,4 +32,4 @@ class ShowController {
 
 }
 
-module.exports = ShowController
+module.exports = ShowController;
